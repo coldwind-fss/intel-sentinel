@@ -163,7 +163,8 @@ searcher/bocha.py（BochaSearcher + HTTP API）
 ├── .gitignore           # 已建立，排除密钥、虚拟环境和缓存
 ├── docs/
 │   ├── PRODUCT_BASELINE.md  # 当前产品/技术基线
-│   └── PROJECT_CONTEXT.md   # 本文件，完整历史上下文
+│   ├── PROJECT_CONTEXT.md   # 本文件，完整历史上下文
+│   └── TEACHING_DEVELOPMENT_GUIDE.md # 教学开发合作规范
 ├── config.py            # M4：主题和输出目录
 ├── searcher/
 │   ├── __init__.py      # Searcher 接口和 create_searcher 工厂
@@ -525,6 +526,7 @@ python -m agent.build
 | `reports/` | 目录存在，以 `.gitkeep` 保留 | M4 部分完成 |
 | `PROJECT_BRIEF.md` | 早期 M1 交接稿，路径和进度过时 | 历史资料 |
 | `docs/PRODUCT_BASELINE.md` | 当前产品/技术基线 | 权威基线 |
+| `docs/TEACHING_DEVELOPMENT_GUIDE.md` | 教学开发合作方式、节奏和边界 | 教学行为规范 |
 | `.gitignore` | 排除 `.env`、`.venv`、缓存 | Git 安全规则 |
 | `requirements.txt` | 尚未建立 | 待办 |
 | `测试1.py` | 工作区已有历史测试脚本 | 作用待核实 |
@@ -641,6 +643,7 @@ Get-Content .\main.py
 |---|---|---|
 | `docs/PRODUCT_BASELINE.md` | 当前产品、技术、里程碑和教学基线 | 当前确认意图和当前状态 |
 | `docs/PROJECT_CONTEXT.md` | 本文件，完整历史、问题流转和迁移背景 | 上下文恢复和历史解释 |
+| `docs/TEACHING_DEVELOPMENT_GUIDE.md` | 教学开发合作方式、节奏、边界和验收规则 | 教学行为规范 |
 | `PROJECT_BRIEF.md` | 早期交接稿 | 仅历史参考，不覆盖新基线 |
 | `lesson-format.md`（项目外路径） | 早期完整复习教学格式 | 仅在用户明确要求复习时参考 |
 
@@ -664,4 +667,3 @@ Get-Content .\main.py
 - [ ] 没有为了验证而重复调用付费 API。
 
 本文件的目标是让新 Agent 直接接上现有项目，而不是让新 Agent 重新猜测项目历史。
-
